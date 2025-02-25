@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[spanish]{babel} %Palabras default en español.
+\usepackage[utf8]{inputenc} %Codificación UTF-8.
+\usepackage{graphicx} %Permite poner imágenes.
+\usepackage{fancyhdr} %Encabezados y pie de página.
+\usepackage{amssymb,amsmath,amsthm} %Paquetes AMS.
+\usepackage{geometry} %Márgenes de la página.
+\usepackage{enumerate} %Lista de problemas.
+\usepackage{hyperref} %Agregar enlaces.
+\usepackage{xcolor}
+
+%Estructuras:
+\newcommand{\curso}[3]{
+	\item \href{#3}
+		{$\vcenter{\hbox{\includegraphics[height=1em]{imgs/pdf.jpg}}}$}
+		#1 \textcolor{lightgray}{(enfoque #2)}}
+		
+\newcommand{\ucursos}[2]{https://www.u-cursos.cl/ingenieria/#1/datos_curso/bajar_programa?id=#2}	
+
+%Configuración de la página:
+\geometry{a4paper,margin=1.5cm,tmargin=3cm}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+    
+%Encabezado:
+\fancypagestyle{plain}{
+	\fancyhead[L]{Departamento de Ingeniería Civil Matemática\\Facultad de Ciencias Físicas y Matemáticas\\Universidad de Chile}
+	\fancyhead[R]{\includegraphics[height=1.5cm]{imgs/dim.pdf}}
+}
+
+% Título:
+\title{\bfseries{Cursos de especialización en machine learning, optimización computacional y teoría estocástica}}
+\author{\textbf{Nombre:} Fernando Fêtis Riquelme}
+\date{}
+
+\begin{document}
+\maketitle
+\pagenumbering{gobble}
+\section*{Cursos de formación básica}
+
+\begin{enumerate}[{\bf Curso 1.}]
+	\curso{CC6204 Deep learning}{teórico y práctico}{\ucursos{2022/2/CC6204/1}{30074}}
+	\curso{MDS7103 Bases de Datos}{práctico}{\ucursos{2023/1/MDS7103/1/}{81133}}
+	\curso{MA5204 Aprendizaje de máquinas}{teórico y práctico}{\ucursos{2021/1/MA5204/1}{39073}}
+	\curso{CC6205 Procesamiento de Lenguaje Natural}{práctico}{\ucursos{2024/1/CC6205/1}{47217}}
+	\curso{MDS7202 Laboratorio de Programación Científica para Ciencia de Datos}{práctico}{\ucursos{2023/1/MDS7202/1/}{81121}}
+	\curso{CC5206 Introducción a la minería de datos}{práctico}{\ucursos{2021/2/CC5206/1}{4589}}
+	\curso{MA3711 Optimización matemática}{teórico}{\ucursos{2022/1/MA3711/1}{29646}}
+	\curso{CC3001 Algoritmos y estructuras de datos}{práctico}{\ucursos{2022/2/CC3001/2}{68645}}
+	\curso{MA3705 Algoritmos combinatoriales}{teórico}{\ucursos{2022/2/MA3705/1}{13282}}
+	\curso{MA3401 Probabilidades}{teórico}{\ucursos{2022/1/MA3401/1}{12486}}
+	\curso{MA3402 Estadística}{teórico}{\ucursos{2022/2/MA3402/1}{15358}}
+	\curso{MA5602 Modelos de evolución}{teórico}{\ucursos{2022/1/MA5602/1}{5113}}
+	\curso{MA4702 Programación lineal mixta}{teórico y práctico}{\ucursos{2022/1/MA4702/1}{6004}}
+\end{enumerate}
+
+\section*{Cursos de formación avanzada}
+\begin{enumerate}[{\bf Curso 1.}]
+	\curso{MDS7203 Modelos Generativos Profundos}{teórico y práctico}{\ucursos{2023/2/MDS7203/1/}{150626}}
+	\curso{MA5309 Aprendizaje de máquinas avanzado}{teórico}{\ucursos{2020/2/MA5309/1}{63514}}
+	\curso{MDS7201 Proyecto de Ciencia de Datos}{práctico}{\ucursos{2023/1/MDS7201/1/}{81125}}
+	\curso{MA4401 Procesos de Markov}{teórico}{\ucursos{2022/1/MA4401/1}{39657}}
+	\curso{MA4402 Simulación estocástica}{teórico y práctico}{\ucursos{2022/2/MA4402/1}{4092}}
+	\curso{MA5802 Introducción a los Sistemas Dinámicos y la Teoria Ergódica}{teórico}{\ucursos{2024/1/MA5802/1}{4095}}
+	\curso{MA5701 Optimización no lineal}{práctico}{\ucursos{2022/1/MA5701/1}{33005}}
+	\curso{MA4703 Control óptimo}{teórico y práctico}{\ucursos{2022/2/MA4703/1}{28730}}
+	\curso{MA5201 Calculabilidad y Complejidad Computacional}{teórico}{\ucursos{2023/1/MA5201/1/}{3751}}
+	\curso{MA3802 Teoría de la medida}{teórico}{\ucursos{2022/2/MA3802/1}{12498}}
+	\curso{MA5307 Análisis numérico de EDP's}{teórico y práctico}{\ucursos{2022/1/MA5307/1}{6697}}
+\end{enumerate}
+\vfill{}
+Esta lista corresponde a cursos formalmente aprobados y no se enumeran los cursos a los que asistí como oyente.
+
+\end{document}
